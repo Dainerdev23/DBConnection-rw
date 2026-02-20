@@ -11,7 +11,7 @@ import { pool } from "./db.js";
 //     genre VARCHAR(250) 
 // `);
 
-const PORT = process.env.PORT || 3000;c
+const PORT = process.env.PORT || 3000;
 const app = express();
 app.use(express.json()); //middlewares
 app.use(cors());
