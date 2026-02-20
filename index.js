@@ -6,9 +6,9 @@ import { pool } from "./db.js";
 await pool.query(`
   CREATE TABLE IF NOT EXISTS movies  (
 	  id INT AUTO_INCREMENT PRIMARY KEY,
-    title VARCHAR(100) NOT NULL,
-    year INT NO NULL,
-    gender VARCHAR(50) NOT NULL)
+    title VARCHAR(250) ,
+    year INT ,
+    genre VARCHAR(250) 
 `);
 
 const PORT = process.env.PORT || 3000;c
