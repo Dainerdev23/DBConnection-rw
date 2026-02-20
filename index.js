@@ -3,13 +3,13 @@ import cors from "cors";
 import dotenv from "dotenv";
 import { pool } from "./db.js";
 
-await pool.query(`
-  CREATE TABLE IF NOT EXISTS movies  (
-	  id INT AUTO_INCREMENT PRIMARY KEY,
-    title VARCHAR(250) ,
-    year INT ,
-    genre VARCHAR(250) 
-`);
+// await pool.query(`
+//   CREATE TABLE IF NOT EXISTS movies  (
+// 	  id INT AUTO_INCREMENT PRIMARY KEY,
+//     title VARCHAR(250) ,
+//     year INT ,
+//     genre VARCHAR(250) 
+// `);
 
 const PORT = process.env.PORT || 3000;c
 const app = express();
